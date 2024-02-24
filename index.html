@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Scraper</title>
+  <link rel="stylesheet" href="styles.scss">
+</head>
+<body>
+  <div class="container">
+    <h1>Web Scraper</h1>
+    <form id="url-form">
+      <label for="url-input">Enter a URL:</label>
+      <input type="text" id="url-input" name="url-input" required>
+      <button type="submit">Scrape</button>
+    </form>
+    <div id="results" class="hidden">
+      <h2>Results:</h2>
+      <pre id="html-output"></pre>
+      <pre id="css-output"></pre>
+      <pre id="js-output"></pre>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
